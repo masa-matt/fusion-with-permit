@@ -124,7 +124,7 @@ async function restOfLogic(pkey, apikey) {
   console.log("Permit signature", signature);
   // Split the signature into v, r, s
   const vrs = ethers.Signature.from(signature);
-  let permitString = "0xd505accf";
+  let permitString = "0x";
   permitString += ethers.zeroPadValue(permitParams.owner, 32).replace("0x", "");
   permitString += ethers
     .zeroPadValue(permitParams.spender, 32)
